@@ -6,11 +6,14 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "baseui": "^9.85.0",
     "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^6.0.0-beta.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "styletron-engine-atomic": "^1.4.6",
+    "styletron-react": "^5.2.7"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,5 +35,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/styletron-engine-atomic": "^1.1.0",
+    "@types/styletron-react": "^5.0.2",
+    "@types/styletron-standard": "^2.0.0",
+    "eslint-plugin-baseui": "^9.85.0"
   }
 }
