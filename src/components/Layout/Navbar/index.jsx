@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import {
   HeaderNavigation,
   ALIGN,
@@ -17,7 +17,7 @@ const Navbar = ({ setIsOpen }) => {
     <HeaderNavigation className={css({ padding: "0 1rem" })}>
       <StyledNavigationList $align={ALIGN.left}>
         <StyledNavigationItem>
-          <Link>Uber</Link>
+          <Link to="/">Uber</Link>
         </StyledNavigationItem>
       </StyledNavigationList>
       <StyledNavigationList $align={ALIGN.left}>
