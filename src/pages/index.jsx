@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <div>
       <div>
-        <Button type="button">Hello World</Button>
+        <Button kind="" type="button">
+          Hello World
+        </Button>
         <Link to="/shoe"> Hello </Link>
       </div>
     </div>

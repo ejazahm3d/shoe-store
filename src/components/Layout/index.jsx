@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import Navbar from "./Navbar";
+import CartDrawer from "./Drawer";
 
 const PageLayout = ({ children }) => {
-  const { pathname } = useLocation();
-  const [current, setCurrent] = useState(pathname);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
+      <div>
+        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+      </div>
+      <CartDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
       <main>{children}</main>
     </>
   );
