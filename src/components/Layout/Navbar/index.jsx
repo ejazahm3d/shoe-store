@@ -8,7 +8,6 @@ import {
 import { Button } from "baseui/button"
 import { useStyletron } from "baseui"
 import { MdShoppingCart } from "react-icons/md"
-import { Link } from "react-router-dom"
 import DesktopNav from "./DesktopNav"
 import MobileNav from "./MobileNav"
 import useBreakpoint from "../../../hooks/useBreakpoint"

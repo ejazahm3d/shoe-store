@@ -1,9 +1,4 @@
 import React from "react"
-import {
-    ALIGN,
-    StyledNavigationList,
-    StyledNavigationItem,
-} from "baseui/header-navigation"
 import { Button } from "baseui/button"
 import { useStyletron } from "baseui"
 import { Link } from "react-router-dom"
