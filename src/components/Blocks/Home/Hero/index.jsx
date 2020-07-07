@@ -3,7 +3,7 @@ import { useStyletron } from "baseui"
 import { Display2 } from "baseui/typography"
 
 const Hero = () => {
-    const [css, theme] = useStyletron()
+    const [css] = useStyletron()
     return (
         <div
             className={css({
