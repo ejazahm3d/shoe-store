@@ -1,14 +1,18 @@
 import { createSlice, configureStore, combineReducers } from "@reduxjs/toolkit"
+import jsonProducts from "./products.json"
 
-const counterSlice = createSlice({
-    name: "counter",
-    initialState: 0,
-    reducers: {
-        increment: (state) => state + 1,
-        decrement: (state) => state - 1,
-    },
+const products = {}
+jsonProducts.forEach((product) => (products[product.id] = product))
+
+const initialProductsState = {
+    latest: jsonProducts,
+}
+
+const productsSlice = createSlice({
+    name: "products",
+    initialState: initialProductsState,
 })
 
 export const store = configureStore({
-    reducer: combineReducers({ counter: counterSlice.reducer }),
+    reducer: combineReducers({ products: productsSlice.reducer }),
 })
