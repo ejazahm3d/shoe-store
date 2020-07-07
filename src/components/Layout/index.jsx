@@ -10,7 +10,7 @@ const PageLayout = ({ children }) => {
                 <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
             </div>
             <CartDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
-            <main>{children}</main>
+            <main style={{ width: "100%" }}>{children}</main>
         </>
     )
 }

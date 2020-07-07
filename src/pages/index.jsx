@@ -1,18 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Button } from "baseui/button";
+import React from "react"
+import { Link } from "react-router-dom"
+import { Button } from "baseui/button"
+import Hero from "../components/Blocks/Home/Hero"
+import { FlexGrid, FlexGridItem } from "baseui/flex-grid"
 
 const Home = () => {
-  return (
-    <div>
-      <div>
-        <Button kind="" type="button">
-          Hello World
-        </Button>
-        <Link to="/shoe"> Hello </Link>
-      </div>
-    </div>
-  );
-};
+    return (
+        <FlexGrid
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center"
+        >
+            <FlexGridItem>
+                <Hero />
+            </FlexGridItem>
+        </FlexGrid>
+    )
+}
 
-export default Home;
+export default Home
