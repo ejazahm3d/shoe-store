@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "baseui": "^9.85.0",
     "history": "^5.0.0",
+    "lodash.throttle": "^4.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
