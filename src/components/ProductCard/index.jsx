@@ -6,7 +6,7 @@ import { useStyletron } from "baseui"
 import { useNavigate } from "react-router-dom"
 import useBreakpoint from "../../hooks/useBreakpoint"
 
-const ProductCard = ({ data, productsStoreName }) => {
+const ProductCard = ({ data, productsCategoryName }) => {
     const [css, theme] = useStyletron()
     const navigate = useNavigate()
     const breakPoint = useBreakpoint()
@@ -31,7 +31,7 @@ const ProductCard = ({ data, productsStoreName }) => {
                         cursor: "pointer",
                     },
                     onClick: () =>
-                        navigate(`/${productsStoreName}/${data?.id}`),
+                        navigate(`/${productsCategoryName}/${data?.id}`),
                 }}
             >
                 <div

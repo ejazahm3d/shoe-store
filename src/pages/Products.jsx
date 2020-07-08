@@ -5,16 +5,16 @@ import { useSelector } from "react-redux"
 
 const ProductsPage = () => {
     const params = useParams()
-    const productsStoreName = params.category
-    const productStore = useSelector((state) => state.products)
-    const category = productStore[productsStoreName]
+    const productsCategoryName = params.category
+    const state = useSelector((state) => state.products)
+    const category = state[productsCategoryName]
     const products = category?.products ?? []
     const productArray = Object.values(products)
 
     return (
         <>
             <Products
-                productsStoreName={params.category}
+                productsCategoryName={productsCategoryName}
                 products={productArray}
             />
         </>

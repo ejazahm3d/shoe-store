@@ -3,7 +3,7 @@ import ProductCard from "../../../ProductCard"
 import useBreakPoint from "../../../../hooks/useBreakpoint"
 import { useStyletron } from "baseui"
 
-const Products = ({ productsStoreName, products }) => {
+const Products = ({ productsCategoryName, products }) => {
     const [css] = useStyletron()
     const breakPoint = useBreakPoint()
 
@@ -24,7 +24,7 @@ const Products = ({ productsStoreName, products }) => {
                     <ProductCard
                         data={product}
                         key={product.id}
-                        productsStoreName={productsStoreName}
+                        productsCategoryName={productsCategoryName}
                     />
                 ))}
             </div>
