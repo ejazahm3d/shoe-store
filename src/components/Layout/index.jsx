@@ -5,13 +5,13 @@ import CartDrawer from "./Drawer"
 const PageLayout = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <>
-            <div>
+        <div style={{ width: "100%" }}>
+            <div style={{ width: "100%" }}>
                 <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
             </div>
             <CartDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
             <main style={{ width: "100%" }}>{children}</main>
-        </>
+        </div>
     )
 }
 

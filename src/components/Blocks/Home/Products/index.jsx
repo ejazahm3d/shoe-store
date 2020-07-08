@@ -1,24 +1,23 @@
 import React from "react"
 import { useSelector } from "react-redux"
 import ProductCard from "../../../ProductCard"
-import { Cell, Grid, ALIGNMENT, BEHAVIOR } from "baseui/layout-grid"
 const Products = () => {
     const { latest } = useSelector((state) => state.products)
 
     return (
         <div style={{ margin: "5rem 1rem" }}>
-            <Grid
-                gridGaps={20}
-                align={ALIGNMENT.start}
-                behavior={BEHAVIOR.fluid}
-                gridGutters={100}
+            <div
+                style={{
+                    display: "grid",
+                    gridTemplateColumns:
+                        "repeat(auto-fit, minmax(min(22rem, 100%), 1fr))",
+                    gridGap: "5rem",
+                }}
             >
                 {latest.map((product) => (
-                    <Cell key={product.id} span={4}>
-                        <ProductCard data={product} />
-                    </Cell>
+                    <ProductCard data={product} key={product.id} />
                 ))}
-            </Grid>
+            </div>
         </div>
     )
 }
