@@ -1,16 +1,12 @@
 import React from "react"
-import { useSelector } from "react-redux"
 import ProductCard from "../../../ProductCard"
 import useBreakPoint from "../../../../hooks/useBreakpoint"
 import { useStyletron } from "baseui"
 
-const Products = ({ productsStoreName = "home" }) => {
-    const productStore = useSelector((state) => state.products)
-    const category = productStore[productsStoreName]
-    const products = category?.products ?? []
-    const productArray = Object.values(products)
+const Products = ({ productsStoreName, products }) => {
     const [css] = useStyletron()
     const breakPoint = useBreakPoint()
+
     const smXs = breakPoint === "sm" || breakPoint === "xs"
 
     return (
@@ -24,7 +20,7 @@ const Products = ({ productsStoreName = "home" }) => {
                     gridGap: "3rem",
                 })}
             >
-                {productArray.map((product) => (
+                {products?.map((product) => (
                     <ProductCard
                         data={product}
                         key={product.id}

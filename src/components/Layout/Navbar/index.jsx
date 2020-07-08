@@ -39,7 +39,7 @@ const Navbar = ({ setIsOpen }) => {
             link: "/hoodies",
         },
         {
-            id: 4,
+            id: 5,
             name: "Kids",
             link: "/kids",
         },
