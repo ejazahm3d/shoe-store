@@ -1,9 +1,9 @@
 import React from "react"
 import { useSelector } from "react-redux"
 import ProductCard from "../../../ProductCard"
-const Products = () => {
-    const { latest } = useSelector((state) => state.products)
-
+const Products = ({ productsStoreName = "latest" }) => {
+    const productStore = useSelector((state) => state.products)
+    const products = productStore[productsStoreName]
     return (
         <div style={{ margin: "5rem 1rem" }}>
             <div
@@ -14,8 +14,12 @@ const Products = () => {
                     gridGap: "5rem",
                 }}
             >
-                {latest.map((product) => (
-                    <ProductCard data={product} key={product.id} />
+                {products.map((product) => (
+                    <ProductCard
+                        data={product}
+                        key={product.id}
+                        productsStoreName={productsStoreName}
+                    />
                 ))}
             </div>
         </div>

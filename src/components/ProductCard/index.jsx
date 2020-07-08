@@ -1,50 +1,75 @@
 import React from "react"
 import { Card, StyledAction } from "baseui/card"
 import { Button } from "baseui/button"
-import { HeadingSmall } from "baseui/typography"
+import { HeadingSmall, HeadingMedium } from "baseui/typography"
+import { useStyletron } from "baseui"
+import { useNavigate } from "react-router-dom"
 
-const ProductCard = ({ data }) => {
+const ProductCard = ({ data, productsStoreName }) => {
+    const [css, theme] = useStyletron()
+    const navigate = useNavigate()
+
     return (
         <div>
             <Card
                 overrides={{
-                    Root: { style: { width: "100%", height: "100%" } },
+                    Root: {
+                        style: {
+                            position: "relative",
+                        },
+                    },
                 }}
-                title={data?.name}
                 headerImage={{
                     src: data?.images?.[0],
                     style: {
                         height: "18rem",
                         minWidth: "100%",
                         objectFit: "cover",
+                        cursor: "pointer",
                     },
+                    onClick: () =>
+                        navigate(`/${productsStoreName}/${data?.id}`, {
+                            state: { product: "3", id: "3" },
+                        }),
                 }}
             >
                 <div
-                    style={{
+                    className={css({
                         display: "flex",
                         justifyContent: "space-between",
-                        alignItems: "center",
-                        width: "100%",
-                    }}
+                        alignItems: "flex-start",
+                        position: "absolute",
+                        top: "0",
+                        padding: "1rem",
+                        left: 0,
+                        right: 0,
+                    })}
                 >
-                    <HeadingSmall
-                        overrides={{
-                            Block: { style: { margin: "0 0 0.5rem 0" } },
-                        }}
-                    >
-                        Price
-                    </HeadingSmall>
-                    <HeadingSmall
-                        overrides={{
-                            Block: { style: { margin: "0 0 0.5rem 0" } },
-                        }}
-                    >
-                        {data?.price}
-                    </HeadingSmall>
+                    <div>
+                        <HeadingSmall
+                            $style={{
+                                margin: "0",
+                                color: theme.colors.primary600,
+                            }}
+                        >
+                            {data?.name}
+                        </HeadingSmall>
+                    </div>
+                    <div>
+                        <HeadingMedium
+                            $style={{
+                                margin: "0",
+                                color: theme.colors.primary600,
+                            }}
+                        >
+                            {data?.price}
+                        </HeadingMedium>
+                    </div>
                 </div>
-                <StyledAction>
+
+                <StyledAction style={{ margin: "2rem 0rem" }}>
                     <Button
+                        onClick={() => console.log("Not hello")}
                         overrides={{
                             BaseButton: { style: { width: "100%" } },
                         }}

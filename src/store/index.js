@@ -5,7 +5,7 @@ const products = {}
 jsonProducts.forEach((product) => (products[product.id] = product))
 
 const initialProductsState = {
-    latest: jsonProducts,
+    home: jsonProducts,
 }
 
 const productsSlice = createSlice({
