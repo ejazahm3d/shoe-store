@@ -25,13 +25,23 @@ const Navbar = ({ setIsOpen }) => {
         },
         {
             id: 2,
-            name: "Upcoming",
-            link: "/shoe",
+            name: "Jackets",
+            link: "/jackets",
         },
         {
             id: 3,
-            name: "Latest",
-            link: "/shoe",
+            name: "Shoes",
+            link: "/shoes",
+        },
+        {
+            id: 4,
+            name: "Hoodies",
+            link: "/hoodies",
+        },
+        {
+            id: 4,
+            name: "Kids",
+            link: "/kids",
         },
     ]
 

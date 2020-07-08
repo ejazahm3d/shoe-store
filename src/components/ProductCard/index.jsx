@@ -39,8 +39,9 @@ const ProductCard = ({ data, productsStoreName }) => {
                         justifyContent: "space-between",
                         alignItems: "flex-start",
                         position: "absolute",
-                        top: "0",
+                        bottom: "7rem",
                         padding: "1rem",
+                        backgroundColor: theme.colors.primary50,
                         left: 0,
                         right: 0,
                     })}
@@ -49,7 +50,8 @@ const ProductCard = ({ data, productsStoreName }) => {
                         <HeadingSmall
                             $style={{
                                 margin: "0",
-                                color: theme.colors.primary600,
+
+                                color: theme.colors.primary700,
                             }}
                         >
                             {data?.name}

@@ -4,9 +4,10 @@ import ProductCard from "../../../ProductCard"
 import useBreakPoint from "../../../../hooks/useBreakpoint"
 import { useStyletron } from "baseui"
 
-const Products = ({ productsStoreName }) => {
+const Products = ({ productsStoreName = "home" }) => {
     const productStore = useSelector((state) => state.products)
-    const { products } = productStore[productsStoreName]
+    const category = productStore[productsStoreName]
+    const products = category?.products ?? []
     const productArray = Object.values(products)
     const [css] = useStyletron()
     const breakPoint = useBreakPoint()
