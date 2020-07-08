@@ -11,6 +11,7 @@ const ProductCard = ({ data, productsStoreName }) => {
     const navigate = useNavigate()
     const breakPoint = useBreakpoint()
     const smXs = breakPoint === "sm" || breakPoint === "xs"
+
     return (
         <div>
             <Card
@@ -24,7 +25,7 @@ const ProductCard = ({ data, productsStoreName }) => {
                 headerImage={{
                     src: data?.images?.[0],
                     style: {
-                        height: `${smXs ? "" : "20rem"}`,
+                        height: `${smXs ? "" : ""}`,
                         minWidth: "100%",
                         objectFit: "cover",
                         cursor: "pointer",

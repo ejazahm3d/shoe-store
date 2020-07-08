@@ -31,6 +31,11 @@ const initialProductsState = {
         route: "/kids",
         products: mapProducts(kidsClothes),
     },
+    shoes: {
+        name: "Men's Jackets and Vests",
+        route: "/shoes",
+        products: mapProducts(shoes),
+    },
 }
 
 const productsSlice = createSlice({
