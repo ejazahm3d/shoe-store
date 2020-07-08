@@ -1,0 +1,169 @@
+[{
+    "id": "527b5704-bea6-4aa3-ab62-8d92a573249f",
+    "name": "Nike Throwback",
+    "price": "$85",
+    "category": "Men's Basketball Pullover Hoodie",
+    "description": "<p>The Nike Throwback Pullover is made with premium French terry fabric that blends a performance feel with a fit tailored for comfort. The asymmetrical tie-dye panel is inspired by an iconic team uniform from 1992.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: College Navy/Pale Ivory</li><li class=\"description-preview__style-color ncss-li\">Style: CK6368-419</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/7c9953ce-5623-48a9-88c3-5ba9b68241a6/throwback-mens-basketball-pullover-hoodie-n6WcnX.jpg"]
+}, {
+    "id": "4bd63224-6fde-4aba-875b-a85a2cd42815",
+    "name": "Nike Sportswear",
+    "price": "$55",
+    "category": "Men's New York City Pullover Hoodie",
+    "description": "<p>A closet staple, the Nike Sportswear Pullover Hoodie combines the comfort of fleece with an elevated look inspired by the City of Dreams.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Pink Foam</li><li class=\"description-preview__style-color ncss-li\">Style: CZ9018-663</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/167f3204-4fe3-4f00-82c8-d8fa0faf292d/sportswear-mens-new-york-city-pullover-hoodie-lV48k8.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/73041955-0825-4177-90bc-f482f64986e1/sportswear-mens-new-york-city-pullover-hoodie-lV48k8.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/3a7afefb-ad0c-4ab6-8bbb-1fe7fa689c15/sportswear-mens-new-york-city-pullover-hoodie-lV48k8.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/b4654810-078c-43b2-a6d8-6edbdb039951/sportswear-mens-new-york-city-pullover-hoodie-lV48k8.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/2ff71091-32e2-47b5-b7d2-5dd4c45e3ced/sportswear-mens-new-york-city-pullover-hoodie-lV48k8.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/f6a9126e-3caf-4e70-9c3d-53f315deebc0/sportswear-mens-new-york-city-pullover-hoodie-lV48k8.jpg"]
+}, {
+    "id": "63f0b638-9904-4e64-93c5-542991c24478",
+    "name": "Nike Sportswear Swoosh",
+    "price": "$90",
+    "category": "Men's Pullover Hoodie",
+    "description": "<p>The Nike Sportswear Hoodie provides a stylish fit for cool weather thanks to Swoosh branding at the chest, cuff, and back panel.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: White/Volt</li><li class=\"description-preview__style-color ncss-li\">Style: CZ5569-100</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/dfe22549-936b-4637-92a1-43af79399fb9/sportswear-swoosh-mens-pullover-hoodie-50p07B.jpg"]
+}, {
+    "id": "a6da7b4b-01f2-4069-8df4-e366ce5c2812",
+    "name": "Nike Sportswear Swoosh",
+    "price": "$80",
+    "category": "Men's Crew",
+    "description": "<p>The Nike Sportswear Crew warms you up when the weather is cool with a semi-brushed back french terry construction. Language pulled from a tongue tag and a pair of Swoosh designs provide a fresh look to this classic silhouette.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Black/Green Nebula/Ember Glow</li><li class=\"description-preview__style-color ncss-li\">Style: CU3906-011</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/30088a32-d509-4fb4-9841-46f4f3caabc1/sportswear-swoosh-mens-crew-TxTKW4.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/21c67c1a-5f96-4fb1-a98a-6374a9168fe1/sportswear-swoosh-mens-crew-TxTKW4.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/0200a942-2366-4730-b9ad-3ab4cde48807/sportswear-swoosh-mens-crew-TxTKW4.jpg"]
+}, {
+    "id": "5fbba819-40eb-43b7-a61c-0005c65a3c8e",
+    "name": "Nike Dri-FIT Standard Issue",
+    "price": "$90",
+    "category": "Men's Full-Zip Basketball Hoodie",
+    "description": "<p>Nike Basketball offers the Standard Issue Full-Zip Hoodie, part of a collection that combines the look of vintage sportswear with a modern performance feel. Relaxed and easy to wear, it's made from thick, soft French terry. Sweat-wicking Dri-FIT technology and flexible panels make it wearable on the court.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Team Orange/Pale Ivory</li><li class=\"description-preview__style-color ncss-li\">Style: CK6362-891</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/529078b7-7518-483a-9c56-9b4025638a74/dri-fit-standard-issue-mens-full-zip-basketball-hoodie-j4WHn6.jpg"]
+}, {
+    "id": "eb660678-620d-45a6-a985-e6f35afbd1df",
+    "name": "Nike Standard Issue",
+    "price": "$80",
+    "category": "Men's Basketball Pullover Hoodie",
+    "description": "<p>The Nike Standard Issue Pullover Hoodie is made to play in and wear all day. The updated fabric gives it the look and feel of a lifestyle hoodie. Sweat-wicking Dri-FIT technology and flexible panels make it wearable on the court.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Chutney/Pale Ivory</li><li class=\"description-preview__style-color ncss-li\">Style: CV0864-712</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/c569a5a3-7510-4b5d-89b2-3f7c7846af63/standard-issue-mens-basketball-pullover-hoodie-tmtS0f.jpg"]
+}, {
+    "id": "933a20e5-e2e7-417a-ac80-ba08c39a4c1b",
+    "name": "Jordan Jumpman Air",
+    "price": "$55",
+    "category": "Men’s Fleece Pullover Hoodie",
+    "description": "<p>Adjust on the fly. The Jordan Jumpman Air Pullover Hoodie has a toggle on the drawcord that you can quickly slide up or down to adjust the hood opening. The fabric is a midweight French terry that's smooth on the outside and softly brushed on the inside.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Carbon Heather/Carbon Heather/Black/Black</li><li class=\"description-preview__style-color ncss-li\">Style: CK6684-091</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/ae8bcc9f-c788-4276-9446-286aabd7fcb9/jordan-jumpman-air-mens-fleece-pullover-hoodie-NLJ6CZ.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/dfda1562-afac-4ca7-af5a-c893bfe2bbfe/jordan-jumpman-air-mens-fleece-pullover-hoodie-NLJ6CZ.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/27614a5f-0572-4431-99c7-509019f6435c/jordan-jumpman-air-mens-fleece-pullover-hoodie-NLJ6CZ.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/b25dbede-f3f0-4732-b0b6-4b156e8ed7ed/jordan-jumpman-air-mens-fleece-pullover-hoodie-NLJ6CZ.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/66187e24-488c-4d11-a7cb-0cc7033cac5c/jordan-jumpman-air-mens-fleece-pullover-hoodie-NLJ6CZ.jpg"]
+}, {
+    "id": "820ba40c-009a-4a07-991a-4b3f13043e18",
+    "name": "Jordan 23 Engineered",
+    "price": "$150",
+    "category": "Men's Fleece Hoodie",
+    "description": "<p>Jordan 23 Engineered apparel pushes the boundaries of contemporary streetwear while expressing the brand's heritage. This pullover fleece hoodie uses premium stretch-knit fabric with pieced-in woven accents.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: White</li><li class=\"description-preview__style-color ncss-li\">Style: CK9036-100</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/d7c0787c-b4b6-41a4-bb6c-8cb3e2c05662/jordan-23-engineered-mens-fleece-hoodie-KBwJSR.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/67953a8d-498e-4021-8e57-0e84f56b9a1b/jordan-23-engineered-mens-fleece-hoodie-KBwJSR.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/b04a7206-7e47-4c95-ba7e-5c4d6d6acce1/jordan-23-engineered-mens-fleece-hoodie-KBwJSR.jpg"]
+}, {
+    "id": "117f3373-0ae1-4c00-bbdc-c4d7b4b4a8e9",
+    "name": "Nike SB",
+    "price": "$55",
+    "category": "Men's Graphic Skate Hoodie",
+    "description": "<p>The Nike SB Hoodie pairs the laid-back look of tropical graphics with the soft feel of French terry for a casual vibe you can wear all day.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Limelight/Light Thistle</li><li class=\"description-preview__style-color ncss-li\">Style: CI6441-367</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-848cfa84-a69f-4c81-9695-88ec09e5e4de/sb-mens-graphic-skate-hoodie-g6qHRm.jpg"]
+}, {
+    "id": "9c0cda48-bc3f-490d-8ae0-d5f0e8aedd64",
+    "name": "Jordan 23 Engineered",
+    "price": "$55",
+    "category": "Men's Long-Sleeve Crew",
+    "description": "<p>The Jordan 23 Engineered Crew is an elevated basic made from soft, structured cotton. Tonal sleeve graphics and a sewn-on silicone patch give it distinction.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Spiral Sage</li><li class=\"description-preview__style-color ncss-li\">Style: CN3099-313</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/17961939-b8a1-4f08-94d8-2725ee0bd98b/jordan-23-engineered-mens-long-sleeve-crew-lRbhxT.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/f0147357-3ea4-40b1-be10-ffab576a565f/jordan-23-engineered-mens-long-sleeve-crew-lRbhxT.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/710addd3-ec15-4ec5-8b11-6a8d448aa938/jordan-23-engineered-mens-long-sleeve-crew-lRbhxT.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/cc65710d-559f-486f-a814-144126a8e124/jordan-23-engineered-mens-long-sleeve-crew-lRbhxT.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/68d2bcaf-4059-4dd4-a966-15c8eb72a442/jordan-23-engineered-mens-long-sleeve-crew-lRbhxT.jpg"]
+}, {
+    "id": "952d027a-9dff-472f-b167-e9fa711a358b",
+    "name": "Nike Dri-FIT",
+    "price": "$55",
+    "category": "Men's Pullover Training Hoodie",
+    "description": "<p>The Nike Dri-FIT Hoodie combines sweat-wicking technology with soft French terry fabric to help keep you dry and comfortable before, during and after your workout.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Black/Claystone Red/Fossil Stone/Fossil Stone</li><li class=\"description-preview__style-color ncss-li\">Style: CU6024-010</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/ab7d3269-e980-4664-834a-a47a36ccc355/dri-fit-mens-pullover-training-hoodie-tqMpqg.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/bdf6172b-d408-4c5e-a28a-fcad432636c7/dri-fit-mens-pullover-training-hoodie-tqMpqg.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/03818071-1571-4f03-bf3a-d49553af9b41/dri-fit-mens-pullover-training-hoodie-tqMpqg.jpg"]
+}, {
+    "id": "289af3d3-51dc-4a81-9631-65e6ddcd8fdb",
+    "name": "Nike Dri-FIT",
+    "price": "$65",
+    "category": "Men's Fleece 1/2-Zip Training Hoodie",
+    "description": "<p>The Nike Dri-FIT Hoodie is made of soft fabric that feels smooth on the outside and extra soft against your skin. With sweat-wicking technology, you can stay dry and comfortable from your first stretch to your last set.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Black/Black/Hyper Crimson</li><li class=\"description-preview__style-color ncss-li\">Style: CJ4429-010</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-8ecdf872-aba7-42a5-9d65-e0195a98423e/dri-fit-mens-fleece-1-2-zip-training-hoodie-jkxWRf.jpg"]
+}, {
+    "id": "2f4fa983-aa8c-4370-b3de-2bcd24fad966",
+    "name": "Nike ACG",
+    "price": "$100",
+    "category": "Pullover Hoodie",
+    "description": "<p>Stay covered on the trail with the Nike ACG Hoodie. An adjustable design couples with fleece fabric to help keep you going when unexpected weather hits.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: String/Summit White</li><li class=\"description-preview__style-color ncss-li\">Style: CT6337-221</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/919ea222-dc67-4498-88cb-9fd3bbce05bc/acg-pullover-hoodie-k2x4bf.jpg"]
+}, {
+    "id": "8f8b3f9e-a0a5-42e5-aa54-3f44563c7034",
+    "name": "Nike Sportswear Club Fleece",
+    "price": "$55",
+    "category": "Men's Graphic Pullover Hoodie",
+    "description": "<p>A closet staple, the Nike Sportswear Club Fleece Pullover Hoodie gives you soft comfort in a street-ready style for an elevated, everyday look that you really can wear every day.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Orange Trance/Orange Trance</li><li class=\"description-preview__style-color ncss-li\">Style: BV2973-871</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-4321abc2-f503-4f4b-ae7b-a738394895b9/sportswear-club-fleece-mens-graphic-pullover-hoodie-R9w74B.jpg"]
+}, {
+    "id": "5bb62a2d-d4ec-43a0-9593-03a8f4c6fa51",
+    "name": "Nike SB",
+    "price": "$60",
+    "category": "Men's Striped Skate Crew",
+    "description": "<p>The Nike SB Crew is an everyday essential that brings a pop of color with a striped logo. It's made of soft fleece for casual warmth.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Dark Grey Heather/White</li><li class=\"description-preview__style-color ncss-li\">Style: CV1948-063</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/36246baf-c317-4264-bf54-b514d03ed21a/sb-mens-striped-skate-crew-kwfG5k.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/82ef5bc2-1f19-43ba-8561-fea14f3389a9/sb-mens-striped-skate-crew-kwfG5k.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/a0524561-edcb-4109-9273-03fa211aaf3b/sb-mens-striped-skate-crew-kwfG5k.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/062aac41-ab6b-4068-83c0-43188488b90c/sb-mens-striped-skate-crew-kwfG5k.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/dece936a-61d1-4c3b-9641-cde2f322c64e/sb-mens-striped-skate-crew-kwfG5k.jpg"]
+}, {
+    "id": "1770c185-d888-41fa-a1f8-a413e0526ee4",
+    "name": "Nike Sportswear Heritage",
+    "price": "$80",
+    "category": "Men's Full-Zip Hoodie",
+    "description": "<p>Made from soft semi-brushed fleece, the Nike Sportswear Heritage Full-Zip Hoodie gives you classic, casual style. Featuring feathered fabric and retro-inspired details, it looks and feels like an old favorite.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Atmosphere Grey/Heather</li><li class=\"description-preview__style-color ncss-li\">Style: CN9679-059</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/58ceff19-3782-4e7d-a9d4-f92b318d5389/sportswear-heritage-mens-full-zip-hoodie-g8qrgX.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/6c888423-8145-4f64-b446-361ffc18e4ae/sportswear-heritage-mens-full-zip-hoodie-g8qrgX.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/5aef81ae-b64e-419b-a81a-d57ea8151cd7/sportswear-heritage-mens-full-zip-hoodie-g8qrgX.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/f0bd80c6-0877-4afc-a959-ee0858b5b7a9/sportswear-heritage-mens-full-zip-hoodie-g8qrgX.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/95332b03-6db8-4a70-a97a-6972114d3a2c/sportswear-heritage-mens-full-zip-hoodie-g8qrgX.jpg"]
+}, {
+    "id": "3fa481b2-276e-43d4-af83-f18e8e0cb205",
+    "name": "Nike Dri-FIT",
+    "price": "$65",
+    "category": "Men's Sleeveless Fleece Training Hoodie",
+    "description": "<p>The Nike Dri-FIT Hoodie gives you just enough coverage to stay warm without overdoing it. Soft, sweat-wicking fabric helps you stay dry and comfortable from the court to the gym.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: White/Lemon Venom/Black/Black</li><li class=\"description-preview__style-color ncss-li\">Style: CJ4746-100</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-4eff93c7-e3f2-44bd-9ef9-ee1472693e3f/dri-fit-mens-sleeveless-fleece-training-hoodie-NSvBMP.jpg"]
+}, {
+    "id": "d1ac99dc-6e6e-4907-84ff-f14f06941a90",
+    "name": "Nike Yoga Dri-FIT",
+    "price": "$70",
+    "category": "Men's Pullover Hoodie",
+    "description": "<p>The Nike Yoga Dri-FIT Hoodie is made with rich, soft knit fabric that has a little bit of stretch to keep you flowing freely. Sweat-wicking power helps keep you dry on the mat or to and from class.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Black/Black</li><li class=\"description-preview__style-color ncss-li\">Style: BV4022-010</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/ckmicfrnx90am88dgdtw/yoga-dri-fit-mens-pullover-hoodie-dVBDqf.jpg"]
+}, {
+    "id": "8c62f65c-6817-469e-9458-86a0da5b74f0",
+    "name": "Nike Sportswear JDI",
+    "price": "$60",
+    "category": "Men's Pullover Hoodie",
+    "description": "<p>Made from soft French terry, the Nike Sportswear JDI Pullover Hoodie looks and feels like an old favorite with its subtle color-washed appearance and embroidered graphic for simple graphic style.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Cerulean/Cerulean</li><li class=\"description-preview__style-color ncss-li\">Style: CJ4566-424</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-7fc2e213-75ad-4781-b466-7695b8ed4f2f/sportswear-jdi-mens-pullover-hoodie-1WqSS8.jpg"]
+}, {
+    "id": "4282ff30-c08e-4130-8490-1b91813d64d3",
+    "name": "Nike Sportswear Tech Fleece",
+    "price": "$100",
+    "category": "Men's Full-Zip Hoodie",
+    "description": "<p>The Nike Sportswear Tech Fleece Hoodie updates a closet staple with the lightweight warmth of Nike Tech Fleece fabric. Designed with a 2-way zipper, it's a modern take on the classic hoodie.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Pueblo Red/Black</li><li class=\"description-preview__style-color ncss-li\">Style: 928483-603</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-1f46386f-e6f1-4f12-a218-409c10db3d9a/sportswear-tech-fleece-mens-full-zip-hoodie-PhlsFQ.jpg"]
+}, {
+    "id": "dbe59361-ab78-4dbf-a344-87a01a0ceadf",
+    "name": "Nike Sportswear Club Fleece",
+    "price": "$50",
+    "category": "Pullover Hoodie",
+    "description": "<p>A closet staple, the Nike Sportswear Club Fleece Pullover Hoodie combines classic style with the soft comfort of fleece.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Bright Cactus/Bright Cactus/White</li><li class=\"description-preview__style-color ncss-li\">Style: BV2654-308</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-ab7019a5-4e8e-4381-b810-d478c76b26d2/sportswear-club-fleece-pullover-hoodie-Gw4Nwq.jpg"]
+}, {
+    "id": "96c99f3e-0ad1-4147-8532-59e8f075ed11",
+    "name": "Nike Sportswear Club Fleece",
+    "price": "$60",
+    "category": "Men's Full-Zip Hoodie",
+    "description": "<p>The Nike Sportswear Club Fleece Hoodie combines soft fabric with simple street style that's versatile enough for everyday use. With a full zipper that goes to the chin, it's the perfect extra layer on a chilly day.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Cerulean/Cerulean/White</li><li class=\"description-preview__style-color ncss-li\">Style: BV2645-424</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-743c65c0-27cd-4473-ab53-ee748df58610/sportswear-club-fleece-mens-full-zip-hoodie-nR8tst.jpg"]
+}, {
+    "id": "f9c1a44d-de9d-40aa-8f70-ef17f1a16081",
+    "name": "Nike Therma",
+    "price": "$50",
+    "category": "Men's Pullover Training Hoodie",
+    "description": "<p>The Nike Therma Hoodie features soft, thermal fabric and an adjustable hood for warm coverage.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Dark Grey Heather/Black</li><li class=\"description-preview__style-color ncss-li\">Style: 932022-063</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/of0zu26hdlgnhzzafaha/therma-mens-pullover-training-hoodie-tzPzH5.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/zra8pkobfhow6qh8pacq/therma-mens-pullover-training-hoodie-tzPzH5.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/mp3aq3ltjpevuracbjat/therma-mens-pullover-training-hoodie-tzPzH5.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/oehrm4ijcahto3nmmwff/therma-mens-pullover-training-hoodie-tzPzH5.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/s61no3bcqpp0t18xa6vx/therma-mens-pullover-training-hoodie-tzPzH5.jpg"]
+}, {
+    "id": "3ca8a491-9c94-4ea8-ac49-ce3331140fff",
+    "name": "Nike Sportswear Club",
+    "price": "$45",
+    "category": "Crew",
+    "description": "<p>A closet staple, the Nike Sportswear Club Crew combines a classic embroidered logo on the left chest with the soft comfort of fleece for an elevated everyday look.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Midnight Navy/White</li><li class=\"description-preview__style-color ncss-li\">Style: BV2662-410</li></ul>",
+    "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/wedgk49vi3gbgewpgyv0/sportswear-club-crew-TWcqLw.jpg"]
+}]

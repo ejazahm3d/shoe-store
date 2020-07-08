@@ -1,11 +1,14 @@
 import { createSlice, configureStore, combineReducers } from "@reduxjs/toolkit"
-import jsonProducts from "./products.json"
+import shoesJson from "./shoes.json"
 
-const products = {}
-jsonProducts.forEach((product) => (products[product.id] = product))
+const shoeProducts = {}
+shoesJson.forEach((product) => (shoeProducts[product.id] = product))
 
 const initialProductsState = {
-    home: jsonProducts,
+    home: {
+        name: "Men's Shoes",
+        products: shoeProducts,
+    },
 }
 
 const productsSlice = createSlice({

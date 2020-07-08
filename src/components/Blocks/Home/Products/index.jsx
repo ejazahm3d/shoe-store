@@ -1,20 +1,29 @@
 import React from "react"
 import { useSelector } from "react-redux"
 import ProductCard from "../../../ProductCard"
-const Products = ({ productsStoreName = "latest" }) => {
+import useBreakPoint from "../../../../hooks/useBreakpoint"
+import { useStyletron } from "baseui"
+
+const Products = ({ productsStoreName }) => {
     const productStore = useSelector((state) => state.products)
-    const products = productStore[productsStoreName]
+    const { products } = productStore[productsStoreName]
+    const productArray = Object.values(products)
+    const [css] = useStyletron()
+    const breakPoint = useBreakPoint()
+    const smXs = breakPoint === "sm" || breakPoint === "xs"
+
     return (
-        <div style={{ margin: "5rem 1rem" }}>
+        <div className={css({ margin: `5rem ${smXs ? "2rem" : "8rem"}` })}>
             <div
-                style={{
+                className={css({
                     display: "grid",
-                    gridTemplateColumns:
-                        "repeat(auto-fit, minmax(min(22rem, 100%), 1fr))",
-                    gridGap: "5rem",
-                }}
+                    gridTemplateColumns: `repeat(auto-fit, minmax(${
+                        smXs ? "100%" : "22rem"
+                    }, 1fr))`,
+                    gridGap: "3rem",
+                })}
             >
-                {products.map((product) => (
+                {productArray.map((product) => (
                     <ProductCard
                         data={product}
                         key={product.id}

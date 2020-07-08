@@ -4,11 +4,13 @@ import { Button } from "baseui/button"
 import { HeadingSmall, HeadingMedium } from "baseui/typography"
 import { useStyletron } from "baseui"
 import { useNavigate } from "react-router-dom"
+import useBreakpoint from "../../hooks/useBreakpoint"
 
 const ProductCard = ({ data, productsStoreName }) => {
     const [css, theme] = useStyletron()
     const navigate = useNavigate()
-
+    const breakPoint = useBreakpoint()
+    const smXs = breakPoint === "sm" || breakPoint === "xs"
     return (
         <div>
             <Card
@@ -22,15 +24,13 @@ const ProductCard = ({ data, productsStoreName }) => {
                 headerImage={{
                     src: data?.images?.[0],
                     style: {
-                        height: "18rem",
+                        height: `${smXs ? "" : "20rem"}`,
                         minWidth: "100%",
                         objectFit: "cover",
                         cursor: "pointer",
                     },
                     onClick: () =>
-                        navigate(`/${productsStoreName}/${data?.id}`, {
-                            state: { product: "3", id: "3" },
-                        }),
+                        navigate(`/${productsStoreName}/${data?.id}`),
                 }}
             >
                 <div
