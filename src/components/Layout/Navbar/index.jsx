@@ -7,12 +7,13 @@ import {
 } from "baseui/header-navigation"
 import { Button } from "baseui/button"
 import { useStyletron } from "baseui"
-import { MdShoppingCart } from "react-icons/md"
+import { MdShoppingCart, MdDone } from "react-icons/md"
 import DesktopNav from "./DesktopNav"
 import MobileNav from "./MobileNav"
 import useBreakpoint from "../../../hooks/useBreakpoint"
 import { FlexGridItem, FlexGrid } from "baseui/flex-grid"
 import { useSelector } from "react-redux"
+import { Link } from "react-router-dom"
 
 const Navbar = ({ setIsOpen }) => {
     const [isNavOpen, setIsNavOpen] = useState(false)
@@ -62,6 +63,16 @@ const Navbar = ({ setIsOpen }) => {
                     </FlexGridItem>
                 )}
             </FlexGrid>
+            {!lessThanSmXs && (
+                <StyledNavigationList $align={ALIGN.left}>
+                    <StyledNavigationItem>
+                        <Link to="/">
+                            <MdDone size="3rem" />
+                        </Link>
+                    </StyledNavigationItem>
+                </StyledNavigationList>
+            )}
+            <StyledNavigationList $align={ALIGN.center} />
             {!lessThanSmXs && <DesktopNav navData={navData} />}
             <StyledNavigationList $align={ALIGN.center} />
             <StyledNavigationList $align={ALIGN.right}>
