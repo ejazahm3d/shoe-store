@@ -79,7 +79,10 @@ const Navbar = ({ setIsOpen }) => {
                 <StyledNavigationItem>
                     <Button onClick={() => setIsOpen(true)} kind="secondary">
                         <MdShoppingCart size="1.5rem" />
-                        <span>{cartState.items.length}</span>
+
+                        {cartState.items.length > 0 && (
+                            <span>{cartState.items.length}</span>
+                        )}
                     </Button>
                 </StyledNavigationItem>
             </StyledNavigationList>
