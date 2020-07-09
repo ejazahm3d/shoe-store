@@ -5,6 +5,7 @@ import { removeFromCart, updateQty } from "../../../store/actions"
 import { Row, Col, Container } from "react-grid-system"
 import { LabelMedium, H6 } from "baseui/typography"
 import { useStyletron } from "baseui"
+import { Input } from "baseui/input"
 
 const CartItem = ({ item }) => {
     const dispatch = useDispatch()
@@ -31,11 +32,12 @@ const CartItem = ({ item }) => {
                 <Col sm={12} xs={12} md={4} lg={4} style={{ padding: "1rem" }}>
                     <H6 margin="0">{item.name}</H6>
                     <LabelMedium color={theme.colors.primary600}>
-                        <input
-                            className={css({ maxWidth: "100%" })}
+                        <Input
                             type="number"
                             value={item.qty}
+                            min={1}
                             onChange={(e) => onSubmit(e)}
+                            placeholder="Quantity"
                         />
                         {/* Qty: {item.qty} */}
                     </LabelMedium>

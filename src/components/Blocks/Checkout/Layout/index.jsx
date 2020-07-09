@@ -3,7 +3,7 @@ import { HeadingXSmall } from "baseui/typography"
 import { Container, Row } from "react-grid-system"
 import { useStyletron } from "baseui"
 
-const CheckoutLayout = ({ children, stepName, showContent }) => {
+const CheckoutLayout = ({ children, title, showContent }) => {
     const [css, theme] = useStyletron()
 
     return (
@@ -18,7 +18,7 @@ const CheckoutLayout = ({ children, stepName, showContent }) => {
                     padding="1rem 2rem"
                     color={theme.colors.primaryB}
                 >
-                    {stepName}
+                    {title}
                 </HeadingXSmall>
             </Row>
 
