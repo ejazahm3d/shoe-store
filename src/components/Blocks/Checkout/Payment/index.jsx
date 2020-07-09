@@ -64,7 +64,7 @@ const Payment = ({ setStep }) => {
                         justifyContent: "flex-end",
                     })}
                 >
-                    <Button type="submit">Save And Submit</Button>
+                    <Button type="submit">Place Order</Button>
                 </Col>
             </Row>
         </form>
