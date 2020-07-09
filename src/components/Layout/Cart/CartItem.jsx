@@ -17,8 +17,8 @@ const CartItem = ({ item }) => {
     }
     return (
         <Container>
-            <Row justify="start" align="start">
-                <Col sm={12} xs={12} md={4} lg={4}>
+            <Row justify="start" align="center">
+                <Col sm={12} xs={12} md={6} lg={6}>
                     <img
                         className={css({
                             width: "100%",
@@ -29,7 +29,7 @@ const CartItem = ({ item }) => {
                         alt=""
                     />
                 </Col>
-                <Col sm={12} xs={12} md={4} lg={4} style={{ padding: "1rem" }}>
+                <Col sm={12} xs={12} md={6} lg={6} style={{ padding: "1rem" }}>
                     <H6 margin="0">{item.name}</H6>
                     <LabelMedium color={theme.colors.primary600}>
                         <Input
@@ -51,12 +51,19 @@ const CartItem = ({ item }) => {
                             {item.price}
                         </span>
                     </LabelMedium>
-                    {/* <LabelMedium>{item.qty}</LabelMedium> */}
-                </Col>
-                <Col sm={12} xs={12} md={4} lg={4}>
-                    <Button onClick={() => dispatch(removeFromCart(item.id))}>
-                        Remove
-                    </Button>
+                    <div
+                        className={css({
+                            display: "flex",
+                            justifyContent: "flex-end",
+                        })}
+                    >
+                        <Button
+                            kind="minimal"
+                            onClick={() => dispatch(removeFromCart(item.id))}
+                        >
+                            Remove
+                        </Button>
+                    </div>
                 </Col>
             </Row>
         </Container>
