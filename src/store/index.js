@@ -41,22 +41,37 @@ const initialProductsState = {
 const cartSlice = createSlice({
     name: "cart",
     initialState: {
-        items: {},
+        items: [],
     },
     reducers: {
-        addToCart: (state, action) => {
-            const currentItem = state.items[action.payload.id]
-            if (currentItem) {
-                state.items[action.payload.id] = {
+        addToCart(state, action) {
+            const allCartItems = state.items
+            const cartItemIndex = allCartItems.findIndex(
+                (item) => action.payload.id === item.id
+            )
+            if (cartItemIndex !== -1) {
+                state.items[cartItemIndex] = {
                     ...action.payload,
-                    qty: currentItem["qty"] + 1,
+                    qty: state.items[cartItemIndex].qty + 1,
                 }
             } else {
-                state.items[action.payload.id] = action.payload
+                state.items.push(action.payload)
             }
         },
-        removeFromCart: (state, action) => {
-            delete state.items[action.payload]
+        removeFromCart(state, action) {
+            state.items = state.items.filter(
+                (item) => item.id !== action.payload
+            )
+        },
+        updateQty(state, action) {
+            const allCartItems = state.items
+            const cartItemIndex = allCartItems.findIndex(
+                (item) => action.payload.id === item.id
+            )
+
+            if (cartItemIndex !== -1) {
+                allCartItems[cartItemIndex] = action.payload
+            }
         },
     },
 })
