@@ -10,9 +10,7 @@ import { addToCart } from "../store/actions"
 
 const Product = () => {
     /* TODO: 
-1) Toast Notifications
 3) Wishlist
-4) Checkout
 */
 
     const params = useParams()
