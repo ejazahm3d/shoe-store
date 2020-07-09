@@ -5,12 +5,16 @@ import { Input } from "baseui/input"
 import { Button } from "baseui/button"
 import { useStyletron } from "baseui"
 import { Label2 } from "baseui/typography"
+import { useSelector, useDispatch } from "react-redux"
+import { updateShipping } from "../../../../store/actions"
 
 const Shipping = ({ setStep }) => {
     const { control, handleSubmit, errors } = useForm()
+    const { form: shippingState } = useSelector((state) => state.shipping)
+    const dispatch = useDispatch()
     const [css, theme] = useStyletron()
     const onSubmit = (data) => {
-        console.log(data)
+        dispatch(updateShipping(data))
         setStep(2)
     }
     const spacing = css({ margin: "2rem 0" })
@@ -23,7 +27,7 @@ const Shipping = ({ setStep }) => {
                         control={control}
                         name="firstName"
                         error={errors.firstName}
-                        defaultValue=""
+                        defaultValue={shippingState?.firstName}
                         rules={{ required: true }}
                         placeholder={"First Name"}
                     />
@@ -38,7 +42,7 @@ const Shipping = ({ setStep }) => {
                         rules={{ required: true }}
                         error={errors.lastName}
                         name="lastName"
-                        defaultValue=""
+                        defaultValue={shippingState?.lastName}
                         placeholder={"Last Name"}
                     />
                     <Label2 color={theme.colors.negative} marginTop="0.5rem">
@@ -52,7 +56,7 @@ const Shipping = ({ setStep }) => {
                         as={Input}
                         control={control}
                         name="address"
-                        defaultValue=""
+                        defaultValue={shippingState?.address}
                         error={errors.address}
                         rules={{ required: true }}
                         placeholder={"Address"}
@@ -68,7 +72,7 @@ const Shipping = ({ setStep }) => {
                         as={Input}
                         control={control}
                         name="email"
-                        defaultValue=""
+                        defaultValue={shippingState?.email}
                         error={errors.email}
                         rules={{
                             required: true,
@@ -86,7 +90,7 @@ const Shipping = ({ setStep }) => {
                         as={Input}
                         control={control}
                         name="phoneNumber"
-                        defaultValue=""
+                        defaultValue={shippingState?.phoneNumber}
                         error={errors.phoneNumber}
                         rules={{ required: true }}
                         placeholder={"Phone Number"}

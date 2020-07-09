@@ -86,6 +86,25 @@ const cartSlice = createSlice({
     },
 })
 
+const shippingSlice = createSlice({
+    name: "shipping",
+    initialState: {
+        form: {
+            firstName: "",
+            lastName: "",
+            address: "",
+            email: "",
+            phoneNumber: "",
+        },
+    },
+    reducers: {
+        updateShipping(shippingState, action) {
+            console.log(action.payload)
+            shippingState.form = action.payload
+        },
+    },
+})
+
 const productsSlice = createSlice({
     name: "products",
     initialState: initialProductsState,
@@ -95,5 +114,6 @@ export const store = configureStore({
     reducer: combineReducers({
         products: productsSlice.reducer,
         cart: cartSlice.reducer,
+        shipping: shippingSlice.reducer,
     }),
 })
