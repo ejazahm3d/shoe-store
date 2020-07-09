@@ -67,7 +67,7 @@ const Shipping = ({ setStep }) => {
                 </Col>
             </Row>
             <Row className={spacing}>
-                <Col>
+                <Col xs={12} sm={6}>
                     <Controller
                         as={Input}
                         control={control}
@@ -85,7 +85,7 @@ const Shipping = ({ setStep }) => {
                             "Email name is required and should be valid"}
                     </Label2>
                 </Col>
-                <Col>
+                <Col xs={12} sm={6}>
                     <Controller
                         as={Input}
                         control={control}
