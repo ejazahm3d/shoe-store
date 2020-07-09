@@ -12,9 +12,11 @@ import DesktopNav from "./DesktopNav"
 import MobileNav from "./MobileNav"
 import useBreakpoint from "../../../hooks/useBreakpoint"
 import { FlexGridItem, FlexGrid } from "baseui/flex-grid"
+import { useSelector } from "react-redux"
 
 const Navbar = ({ setIsOpen }) => {
     const [isNavOpen, setIsNavOpen] = useState(false)
+    const cartState = useSelector((state) => state.cart)
     const brkPnt = useBreakpoint()
     const lessThanSmXs = brkPnt === "sm" || brkPnt === "xs"
     const navData = [
@@ -66,6 +68,7 @@ const Navbar = ({ setIsOpen }) => {
                 <StyledNavigationItem>
                     <Button onClick={() => setIsOpen(true)} kind="secondary">
                         <MdShoppingCart size="1.5rem" />
+                        <span>{cartState.items.length}</span>
                     </Button>
                 </StyledNavigationItem>
             </StyledNavigationList>
