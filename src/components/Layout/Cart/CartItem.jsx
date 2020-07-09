@@ -17,7 +17,7 @@ const CartItem = ({ item }) => {
     return (
         <Container>
             <Row justify="start" align="start">
-                <Col sm={4} xs={4} md={4} lg={4}>
+                <Col sm={12} xs={12} md={4} lg={4}>
                     <img
                         className={css({
                             width: "100%",
@@ -28,7 +28,7 @@ const CartItem = ({ item }) => {
                         alt=""
                     />
                 </Col>
-                <Col sm={4} xs={4} md={4} lg={4} style={{ padding: "1rem" }}>
+                <Col sm={12} xs={12} md={4} lg={4} style={{ padding: "1rem" }}>
                     <H6 margin="0">{item.name}</H6>
                     <LabelMedium color={theme.colors.primary600}>
                         <input
@@ -51,7 +51,7 @@ const CartItem = ({ item }) => {
                     </LabelMedium>
                     {/* <LabelMedium>{item.qty}</LabelMedium> */}
                 </Col>
-                <Col sm={4} xs={4} md={4} lg={4}>
+                <Col sm={12} xs={12} md={4} lg={4}>
                     <Button onClick={() => dispatch(removeFromCart(item.id))}>
                         Remove
                     </Button>

@@ -3,6 +3,7 @@ import shoes from "./shoes.json"
 import hoodies from "./hoodies.json"
 import jackets from "./jackets.json"
 import kidsClothes from "./kidsclothes.json"
+import { toast } from "react-toastify"
 
 const mapProducts = (products) => {
     const mappedProducts = {}
@@ -54,14 +55,23 @@ const cartSlice = createSlice({
                     ...action.payload,
                     qty: state.items[cartItemIndex].qty + 1,
                 }
+                toast("Added to Cart", {
+                    type: "info",
+                })
             } else {
                 state.items.push(action.payload)
+                toast("Added to Cart", {
+                    type: "info",
+                })
             }
         },
         removeFromCart(state, action) {
             state.items = state.items.filter(
                 (item) => item.id !== action.payload
             )
+            toast("Removed from Cart", {
+                type: "error",
+            })
         },
         updateQty(state, action) {
             const allCartItems = state.items

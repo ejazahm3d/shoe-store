@@ -71,7 +71,6 @@ const Product = () => {
                             overrides={{
                                 BaseButton: {
                                     style: {
-                                        width: "20rem",
                                         marginTop: "3rem",
                                     },
                                 },
