@@ -6,11 +6,12 @@ import CheckoutLayout from "../components/Blocks/Checkout/Layout"
 import Shipping from "../components/Blocks/Checkout/Shipping"
 import { useStyletron } from "baseui"
 import CartInfo from "../components/Blocks/Checkout/CartInfo"
+import Payment from "../components/Blocks/Checkout/Payment"
 
 const Checkout = () => {
     const cartState = useSelector((state) => state.cart)
-    const [showShipping, setShowShipping] = useState(false)
-    const [showPayment, setShowPayment] = useState(true)
+
+    const [step, setStep] = useState(1)
 
     const [css] = useStyletron()
     const spacing = css({ margin: "1rem 0" })
@@ -26,17 +27,17 @@ const Checkout = () => {
                     <div className={spacing}>
                         <CheckoutLayout
                             title="1. Shipping"
-                            showContent={showShipping}
+                            showContent={step === 1}
                         >
-                            <Shipping setShowShipping={setShowShipping} />
+                            <Shipping setStep={setStep} />
                         </CheckoutLayout>
                     </div>
                     <div>
                         <CheckoutLayout
                             title="2. Payment"
-                            showContent={showPayment}
+                            showContent={step === 2}
                         >
-                            <Shipping setShowShipping={setShowPayment} />
+                            <Payment setStep={setStep} />
                         </CheckoutLayout>
                     </div>
                 </Col>

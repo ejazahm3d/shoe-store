@@ -5,12 +5,12 @@ import { Input } from "baseui/input"
 import { Button } from "baseui/button"
 import { useStyletron } from "baseui"
 
-const Payment = ({ setShowPayment }) => {
+const Payment = ({ setStep }) => {
     const { control, handleSubmit } = useForm()
     const [css] = useStyletron()
     const onSubmit = (data) => {
         console.log(data)
-        setShowPayment(false)
+        setStep(2)
     }
     const spacing = css({ margin: "2rem 0" })
     return (
@@ -25,6 +25,7 @@ const Payment = ({ setShowPayment }) => {
                         placeholder={"First Name"}
                     />
                 </Col>
+
                 <Col>
                     <Controller
                         as={Input}
@@ -49,6 +50,20 @@ const Payment = ({ setShowPayment }) => {
 
             <Row justify="end">
                 <Col>
+                    <Button
+                        kind="secondary"
+                        type="button"
+                        onClick={() => setStep(1)}
+                    >
+                        Go Back
+                    </Button>
+                </Col>
+                <Col
+                    className={css({
+                        display: "flex",
+                        justifyContent: "flex-end",
+                    })}
+                >
                     <Button type="submit">Save And Submit</Button>
                 </Col>
             </Row>

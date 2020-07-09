@@ -5,12 +5,12 @@ import { Input } from "baseui/input"
 import { Button } from "baseui/button"
 import { useStyletron } from "baseui"
 
-const Shipping = ({ setShowShipping }) => {
+const Shipping = ({ setStep }) => {
     const { control, handleSubmit } = useForm()
     const [css] = useStyletron()
     const onSubmit = (data) => {
         console.log(data)
-        setShowShipping(false)
+        setStep(2)
     }
     const spacing = css({ margin: "2rem 0" })
     return (
@@ -67,7 +67,12 @@ const Shipping = ({ setShowShipping }) => {
                 </Col>
             </Row>
             <Row justify="end">
-                <Col>
+                <Col
+                    className={css({
+                        display: "flex",
+                        justifyContent: "flex-end",
+                    })}
+                >
                     <Button type="submit">Save And Submit</Button>
                 </Col>
             </Row>
