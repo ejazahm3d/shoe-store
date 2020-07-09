@@ -4,7 +4,7 @@ import { useForm, Controller } from "react-hook-form"
 import { Input } from "baseui/input"
 import { Button } from "baseui/button"
 import { useStyletron } from "baseui"
-import { Label4, Label2 } from "baseui/typography"
+import { Label2 } from "baseui/typography"
 
 const Shipping = ({ setStep }) => {
     const { control, handleSubmit, errors } = useForm()
