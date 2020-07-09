@@ -76,7 +76,6 @@ const ProductCard = ({ data, productsCategoryName }) => {
                 <StyledAction style={{ margin: "2rem 0rem" }}>
                     <Button
                         onClick={() => {
-                            console.log("teehee")
                             dispatch(addToCart({ qty: 1, ...data }))
                         }}
                         overrides={{

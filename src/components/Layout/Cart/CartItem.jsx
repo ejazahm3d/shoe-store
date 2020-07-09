@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Button } from "baseui/button"
 import { useDispatch } from "react-redux"
 import { removeFromCart, updateQty } from "../../../store/actions"
@@ -9,7 +9,6 @@ import { useStyletron } from "baseui"
 const CartItem = ({ item }) => {
     const dispatch = useDispatch()
     const [css, theme] = useStyletron()
-    // const brkpoint = useBreakpoint()
 
     const onSubmit = (e) => {
         const qty = parseInt(e.target.value)
@@ -33,7 +32,7 @@ const CartItem = ({ item }) => {
                     <H6 margin="0">{item.name}</H6>
                     <LabelMedium color={theme.colors.primary600}>
                         <input
-                            className={css({ width: "100%" })}
+                            className={css({ maxWidth: "100%" })}
                             type="number"
                             value={item.qty}
                             onChange={(e) => onSubmit(e)}

@@ -3,12 +3,11 @@ import { Drawer, SIZE } from "baseui/drawer"
 import { HeadingMedium } from "baseui/typography"
 import { useSelector } from "react-redux"
 import CartItem from "./CartItem"
-// import useBreakpoint from "../../../hooks/useBreakpoint"
+import { Button } from "baseui/button"
 
 const CartDrawer = ({ isOpen, setIsOpen }) => {
     const cartState = useSelector((state) => state.cart)
-    const items = Object.values(cartState?.items ?? [])
-
+    const items = cartState?.items
     return (
         <Drawer
             isOpen={isOpen}
@@ -17,9 +16,14 @@ const CartDrawer = ({ isOpen, setIsOpen }) => {
             onClose={() => setIsOpen(false)}
         >
             <HeadingMedium>Cart</HeadingMedium>
-            {items.map((item) => (
-                <CartItem key={item.id} item={item} />
-            ))}
+            <div style={{ maxHeight: "60%", overflowY: "scroll" }}>
+                {items.map((item) => (
+                    <CartItem key={item.id} item={item} />
+                ))}
+            </div>
+            {items.length > 0 && (
+                <Button $style={{ marginTop: "2rem" }}>Go to Checkout</Button>
+            )}
         </Drawer>
     )
 }

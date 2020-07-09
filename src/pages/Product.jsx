@@ -1,19 +1,18 @@
 import React from "react"
 import { useParams } from "react-router-dom"
-import { useSelector } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 import { Container, Row, Col } from "react-grid-system"
 import { HeadingMedium, HeadingLarge, Paragraph1 } from "baseui/typography"
 import { Button } from "baseui/button"
+import { addToCart } from "../store/actions"
 
 const Product = () => {
     /* TODO: 
 1) Toast Notifications
-2) Add to cart
 3) Wishlist
 4) Checkout
-
 */
 
     const params = useParams()
@@ -23,7 +22,7 @@ const Product = () => {
     const products = state?.[productsCategoryName]?.products
     const currentProduct = products?.[productId]
     const images = currentProduct?.images ?? []
-    console.log(images)
+    const dispatch = useDispatch()
     return (
         <Container>
             <div style={{ marginTop: "2rem" }}>
@@ -64,7 +63,19 @@ const Product = () => {
                         <Button
                             shape="square"
                             size="large"
-                            $style={{ marginTop: "2rem" }}
+                            onClick={() => {
+                                dispatch(
+                                    addToCart({ qty: 1, ...currentProduct })
+                                )
+                            }}
+                            overrides={{
+                                BaseButton: {
+                                    style: {
+                                        width: "20rem",
+                                        marginTop: "3rem",
+                                    },
+                                },
+                            }}
                         >
                             Add to Cart
                         </Button>
