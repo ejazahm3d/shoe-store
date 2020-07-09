@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Navbar from "./Navbar"
-import CartDrawer from "./Drawer"
+import CartDrawer from "./Cart"
 
 const PageLayout = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false)

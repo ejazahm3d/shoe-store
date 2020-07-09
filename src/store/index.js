@@ -38,11 +38,37 @@ const initialProductsState = {
     },
 }
 
+const cartSlice = createSlice({
+    name: "cart",
+    initialState: {
+        items: {},
+    },
+    reducers: {
+        addToCart: (state, action) => {
+            const currentItem = state.items[action.payload.id]
+            if (currentItem) {
+                state.items[action.payload.id] = {
+                    ...action.payload,
+                    qty: currentItem["qty"] + 1,
+                }
+            } else {
+                state.items[action.payload.id] = action.payload
+            }
+        },
+        removeFromCart: (state, action) => {
+            delete state.items[action.payload]
+        },
+    },
+})
+
 const productsSlice = createSlice({
     name: "products",
     initialState: initialProductsState,
 })
 
 export const store = configureStore({
-    reducer: combineReducers({ products: productsSlice.reducer }),
+    reducer: combineReducers({
+        products: productsSlice.reducer,
+        cart: cartSlice.reducer,
+    }),
 })

@@ -6,7 +6,16 @@ import { Carousel } from "react-responsive-carousel"
 import { Container, Row, Col } from "react-grid-system"
 import { HeadingMedium, HeadingLarge, Paragraph1 } from "baseui/typography"
 import { Button } from "baseui/button"
+
 const Product = () => {
+    /* TODO: 
+1) Toast Notifications
+2) Add to cart
+3) Wishlist
+4) Checkout
+
+*/
+
     const params = useParams()
     const state = useSelector((state) => state.products)
     const productsCategoryName = params?.category

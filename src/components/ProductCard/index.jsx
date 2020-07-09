@@ -5,8 +5,11 @@ import { HeadingSmall, HeadingMedium } from "baseui/typography"
 import { useStyletron } from "baseui"
 import { useNavigate } from "react-router-dom"
 import useBreakpoint from "../../hooks/useBreakpoint"
+import { addToCart } from "../../store/actions"
+import { useDispatch } from "react-redux"
 
 const ProductCard = ({ data, productsCategoryName }) => {
+    const dispatch = useDispatch()
     const [css, theme] = useStyletron()
     const navigate = useNavigate()
     const breakPoint = useBreakpoint()
@@ -72,7 +75,10 @@ const ProductCard = ({ data, productsCategoryName }) => {
 
                 <StyledAction style={{ margin: "2rem 0rem" }}>
                     <Button
-                        onClick={() => console.log("Not hello")}
+                        onClick={() => {
+                            console.log("teehee")
+                            dispatch(addToCart({ qty: 1, ...data }))
+                        }}
                         overrides={{
                             BaseButton: { style: { width: "100%" } },
                         }}
