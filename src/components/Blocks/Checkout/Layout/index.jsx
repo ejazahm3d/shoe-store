@@ -3,20 +3,24 @@ import { HeadingXSmall } from "baseui/typography"
 import { Container, Row } from "react-grid-system"
 import { useStyletron } from "baseui"
 
-const CheckoutLayout = ({ children, title, showContent }) => {
+const CheckoutLayout = ({ children, title, showContent, invert = false }) => {
     const [css, theme] = useStyletron()
 
     return (
         <Container>
             <Row
                 className={css({
-                    background: theme.colors.primaryA,
+                    background: invert
+                        ? theme.colors.contentInverseSecondary
+                        : theme.colors.primaryA,
                 })}
             >
                 <HeadingXSmall
                     margin="0"
                     padding="1rem 2rem"
-                    color={theme.colors.primaryB}
+                    color={
+                        invert ? theme.colors.primaryA : theme.colors.primaryB
+                    }
                 >
                     {title}
                 </HeadingXSmall>

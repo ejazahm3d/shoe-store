@@ -16,7 +16,7 @@ const CartInfo = ({ cartInfo }) => {
     const [css] = useStyletron()
     const spacing = css({ margin: "0.5rem 0" })
     return (
-        <CheckoutLayout title="In Your Cart" showContent={true}>
+        <CheckoutLayout title="In Your Cart" showContent={true} invert={true}>
             <Row justify="between" className={spacing}>
                 <Col>
                     <Paragraph1 margin="0">Subtotal</Paragraph1>
