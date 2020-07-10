@@ -109,13 +109,18 @@ const shippingSlice = createSlice({
 
 const paymentSlice = createSlice({
     name: "payment",
-    initialState: {},
+    initialState: {
+        lastOrder: {},
+    },
     reducers: {
         paymentSucceeded: () => {
             toast("Payment Successful", { type: "success" })
         },
         paymentFailed: (state, action) => {
             toast(`Payment Failed: ${action.payload}`, { type: "error" })
+        },
+        lastOrder: (state, action) => {
+            state.lastOrder = action.payload
         },
     },
     extraReducers: {},

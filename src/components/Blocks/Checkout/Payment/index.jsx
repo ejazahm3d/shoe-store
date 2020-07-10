@@ -7,15 +7,24 @@ import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js"
 import Stripe from "../Stripe"
 import Axios from "axios"
 import { api } from "../../../../env"
-import { useDispatch } from "react-redux"
-import { paymentSucceeded, paymentFailed } from "../../../../store/actions"
-
+import { useDispatch, useSelector } from "react-redux"
+import {
+    paymentSucceeded,
+    paymentFailed,
+    clearCart,
+    lastOrder,
+} from "../../../../store/actions"
+import { useNavigate } from "react-router-dom"
+import { calculateSubtotal, tax, shipping } from "../CartInfo"
 const Payment = ({ setStep }) => {
     const stripe = useStripe()
     const elements = useElements()
     const { handleSubmit } = useForm()
     const dispatch = useDispatch()
+    const items = useSelector((state) => state.cart?.items)
     const [css] = useStyletron()
+    const navigate = useNavigate()
+
     const getClientSecret = async () => {
         const res = await Axios.get(api)
         return { clientSecret: res.data.client_secret }
@@ -33,7 +42,6 @@ const Payment = ({ setStep }) => {
                 card: elements.getElement(CardElement),
             },
         })
-
         if (result.error) {
             // Show error to your customer (e.g., insufficient funds)
             console.log(result.error.message)
@@ -42,7 +50,17 @@ const Payment = ({ setStep }) => {
             // The payment has been processed!
             if (result.paymentIntent.status === "succeeded") {
                 dispatch(paymentSucceeded())
-                console.log("SUCCEEDED")
+                const subtotal = calculateSubtotal(items)
+                dispatch(
+                    lastOrder({
+                        items,
+                        subtotal,
+                        total: subtotal + tax + shipping,
+                    })
+                )
+                dispatch(clearCart())
+                navigate("/success")
+                console.log(result)
                 // Show a success message to your customer
                 // There's a risk of the customer closing the window before callback
                 // execution. Set up a webhook or plugin to listen for the

@@ -4,6 +4,7 @@ import Home from "../pages"
 import Product from "../pages/Product"
 import ProductsPage from "../pages/Products"
 import Checkout from "../pages/Checkout"
+import Success from "../pages/Success"
 
 const Router = () => {
     return (
@@ -12,6 +13,7 @@ const Router = () => {
             <Route path="/:category" element={<ProductsPage />}></Route>
             <Route path="/:category/:product" element={<Product />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/success" element={<Success />} />
         </Routes>
     )
 }

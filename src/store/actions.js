@@ -8,4 +8,5 @@ export const clearCart = createAction("cart/clearCart")
 export const updateShipping = createAction("shipping/updateShipping")
 
 export const paymentSucceeded = createAction("payment/paymentSucceeded")
+export const lastOrder = createAction("payment/lastOrder")
 export const paymentFailed = createAction("payment/paymentFailed")

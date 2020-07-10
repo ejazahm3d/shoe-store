@@ -5,13 +5,19 @@ import { Paragraph1, HeadingSmall, HeadingXSmall } from "baseui/typography"
 import { useStyletron } from "baseui"
 import ProductItem from "../ProductItem"
 
-const CartInfo = ({ cartInfo }) => {
-    const subtotal = cartInfo?.items?.reduce(
-        (acc, curr) => parseInt(curr.price.slice(1)) + acc,
+export const calculateSubtotal = (items) => {
+    return items?.reduce(
+        (acc, curr) => parseInt(curr.price.slice(1)) * parseInt(curr.qty) + acc,
         0
     )
-    const shipping = 10
-    const tax = 0
+}
+
+export const shipping = 10
+export const tax = 0
+
+const CartInfo = ({ cartInfo }) => {
+    const subtotal = calculateSubtotal(cartInfo?.items)
+
     const total = subtotal + shipping + tax
     const [css] = useStyletron()
     const spacing = css({ margin: "0.5rem 0" })
