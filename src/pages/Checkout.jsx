@@ -7,6 +7,11 @@ import Shipping from "../components/Blocks/Checkout/Shipping"
 import { useStyletron } from "baseui"
 import CartInfo from "../components/Blocks/Checkout/CartInfo"
 import Payment from "../components/Blocks/Checkout/Payment"
+import { loadStripe } from "@stripe/stripe-js"
+import { Elements } from "@stripe/react-stripe-js"
+import { pkTest } from "../env"
+
+const stripePromise = loadStripe(pkTest)
 
 const Checkout = () => {
     const cartState = useSelector((state) => state.cart)
@@ -33,11 +38,10 @@ const Checkout = () => {
                         </CheckoutLayout>
                     </div>
                     <div>
-                        <CheckoutLayout
-                            title="2. Payment"
-                            showContent={step === 2}
-                        >
-                            <Payment setStep={setStep} />
+                        <CheckoutLayout title="2. Payment" showContent={true}>
+                            <Elements stripe={stripePromise}>
+                                <Payment setStep={setStep} />
+                            </Elements>
                         </CheckoutLayout>
                     </div>
                 </Col>

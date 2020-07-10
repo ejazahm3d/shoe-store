@@ -4,9 +4,12 @@
     "private": true,
     "dependencies": {
         "@reduxjs/toolkit": "^1.4.0",
+        "@stripe/react-stripe-js": "^1.1.2",
+        "@stripe/stripe-js": "^1.8.0",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
+        "axios": "^0.19.2",
         "baseui": "^9.85.0",
         "history": "^5.0.0",
         "lodash.throttle": "^4.1.1",

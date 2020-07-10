@@ -83,6 +83,9 @@ const cartSlice = createSlice({
                 allCartItems[cartItemIndex] = action.payload
             }
         },
+        clearCart: (state, action) => {
+            state.items = []
+        },
     },
 })
 
@@ -99,10 +102,23 @@ const shippingSlice = createSlice({
     },
     reducers: {
         updateShipping(shippingState, action) {
-            console.log(action.payload)
             shippingState.form = action.payload
         },
     },
+})
+
+const paymentSlice = createSlice({
+    name: "payment",
+    initialState: {},
+    reducers: {
+        paymentSucceeded: () => {
+            toast("Payment Successful", { type: "success" })
+        },
+        paymentFailed: (state, action) => {
+            toast(`Payment Failed: ${action.payload}`, { type: "error" })
+        },
+    },
+    extraReducers: {},
 })
 
 const productsSlice = createSlice({
@@ -115,5 +131,6 @@ export const store = configureStore({
         products: productsSlice.reducer,
         cart: cartSlice.reducer,
         shipping: shippingSlice.reducer,
+        payment: paymentSlice.reducer,
     }),
 })
