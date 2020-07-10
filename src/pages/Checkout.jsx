@@ -12,7 +12,7 @@ import { Elements } from "@stripe/react-stripe-js"
 import { pkTest } from "../env"
 import { useNavigate } from "react-router-dom"
 
-const stripePromise = loadStripe(pkTest)
+const stripePromise = loadStripe(process.env.PK_KEY ?? pkTest)
 
 const Checkout = () => {
     const cartState = useSelector((state) => state.cart)
@@ -28,7 +28,7 @@ const Checkout = () => {
 
     const [css] = useStyletron()
     const spacing = css({ margin: "1rem 0" })
-    // eslint-disable-next-line no-unused-vars
+
     if (cartState.items.length <= 0) return null
     return (
         <Container>

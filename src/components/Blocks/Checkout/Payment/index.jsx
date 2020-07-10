@@ -30,7 +30,7 @@ const Payment = ({ setStep }) => {
     const total = subtotal + tax + shipping
 
     const getClientSecret = async (data) => {
-        const res = await Axios.post(api, data)
+        const res = await Axios.post(process.env.API_URL ?? api, data)
         return { clientSecret: res.data.client_secret }
     }
     const onSubmit = async (data) => {
