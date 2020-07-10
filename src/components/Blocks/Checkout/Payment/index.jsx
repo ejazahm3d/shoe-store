@@ -6,7 +6,6 @@ import { useStyletron } from "baseui"
 import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js"
 import Stripe from "../Stripe"
 import Axios from "axios"
-import { api } from "../../../../env"
 import { useDispatch, useSelector } from "react-redux"
 import {
     paymentSucceeded,
@@ -17,6 +16,13 @@ import {
 import { useNavigate } from "react-router-dom"
 import { calculateSubtotal, tax, shipping } from "../CartInfo"
 import Loader from "../Loader"
+
+let api
+
+if (process.env.NODE_ENV === "development") {
+    api = require("../../../../env").api
+}
+
 const Payment = ({ setStep }) => {
     const stripe = useStripe()
     const [loader, setLoader] = useState(false)

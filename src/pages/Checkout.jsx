@@ -9,8 +9,12 @@ import CartInfo from "../components/Blocks/Checkout/CartInfo"
 import Payment from "../components/Blocks/Checkout/Payment"
 import { loadStripe } from "@stripe/stripe-js"
 import { Elements } from "@stripe/react-stripe-js"
-import { pkTest } from "../env"
 import { useNavigate } from "react-router-dom"
+
+let pkTest
+if (process.env.NODE_ENV === "development") {
+    pkTest = require("../env").pkTest
+}
 
 const stripePromise = loadStripe(process.env.PK_KEY ?? pkTest)
 
