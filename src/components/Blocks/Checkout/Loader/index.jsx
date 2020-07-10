@@ -7,7 +7,7 @@ const Loader = () => {
     return (
         <div
             className={css({
-                background: "rgb(0,0,0,0.1)",
+                background: "rgb(0,0,0,0.2)",
                 position: "fixed",
                 top: 0,
                 bottom: 0,

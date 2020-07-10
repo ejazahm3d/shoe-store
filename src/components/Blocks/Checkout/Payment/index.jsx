@@ -98,7 +98,7 @@ const Payment = ({ setStep }) => {
                     })}
                 >
                     <Button disabled={loader} type="submit">
-                        Checkout
+                        Checkout Securely
                     </Button>
                 </Col>
             </Row>
