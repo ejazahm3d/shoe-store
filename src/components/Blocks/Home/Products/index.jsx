@@ -10,12 +10,12 @@ const Products = ({ productsCategoryName, products }) => {
     const smXs = breakPoint === "sm" || breakPoint === "xs"
 
     return (
-        <div className={css({ margin: `5rem ${smXs ? "2rem" : "8rem"}` })}>
+        <div>
             <div
                 className={css({
                     display: "grid",
                     gridTemplateColumns: `repeat(auto-fit, minmax(${
-                        smXs ? "100%" : "22rem"
+                        smXs ? "100%" : "18rem"
                     }, 1fr))`,
                     gridGap: "3rem",
                 })}

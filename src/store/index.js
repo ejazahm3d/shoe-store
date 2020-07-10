@@ -28,12 +28,12 @@ const initialProductsState = {
         products: mapProducts(jackets),
     },
     kids: {
-        name: "Men's Jackets and Vests",
+        name: "Kid's Clothes",
         route: "/kids",
         products: mapProducts(kidsClothes),
     },
     shoes: {
-        name: "Men's Jackets and Vests",
+        name: "Men's Shoes",
         route: "/shoes",
         products: mapProducts(shoes),
     },
