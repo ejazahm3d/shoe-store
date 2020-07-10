@@ -9,6 +9,7 @@
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
+        "@vercel/node": "^1.7.1",
         "axios": "^0.19.2",
         "baseui": "^9.85.0",
         "history": "^5.0.0",
@@ -23,6 +24,7 @@
         "react-router-dom": "^6.0.0-beta.0",
         "react-scripts": "3.4.1",
         "react-toastify": "^6.0.8",
+        "stripe": "^8.69.0",
         "styletron-engine-atomic": "^1.4.6",
         "styletron-react": "^5.2.7"
     },
