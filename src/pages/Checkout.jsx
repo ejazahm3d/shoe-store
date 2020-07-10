@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-grid-system"
 import { useSelector } from "react-redux"
 import { HeadingXLarge } from "baseui/typography"
@@ -10,18 +10,26 @@ import Payment from "../components/Blocks/Checkout/Payment"
 import { loadStripe } from "@stripe/stripe-js"
 import { Elements } from "@stripe/react-stripe-js"
 import { pkTest } from "../env"
+import { useNavigate } from "react-router-dom"
 
 const stripePromise = loadStripe(pkTest)
 
 const Checkout = () => {
     const cartState = useSelector((state) => state.cart)
+    const navigate = useNavigate()
 
+    useEffect(() => {
+        if (cartState.items.length <= 0) {
+            navigate("/")
+        }
+        return () => {}
+    }, [navigate, cartState])
     const [step, setStep] = useState(1)
 
     const [css] = useStyletron()
     const spacing = css({ margin: "1rem 0" })
     // eslint-disable-next-line no-unused-vars
-
+    if (cartState.items.length <= 0) return null
     return (
         <Container>
             <Row justify="center">
