@@ -11,12 +11,7 @@ import { loadStripe } from "@stripe/stripe-js"
 import { Elements } from "@stripe/react-stripe-js"
 import { useNavigate } from "react-router-dom"
 
-let pkTest
-if (process.env.NODE_ENV === "development") {
-    pkTest = require("../env").pkTest
-}
-
-const stripePromise = loadStripe(process.env.PK_KEY ?? pkTest)
+const stripePromise = loadStripe(process.env.REACT_APP_PK_KEY)
 
 const Checkout = () => {
     const cartState = useSelector((state) => state.cart)

@@ -17,12 +17,6 @@ import { useNavigate } from "react-router-dom"
 import { calculateSubtotal, tax, shipping } from "../CartInfo"
 import Loader from "../Loader"
 
-let api
-
-if (process.env.NODE_ENV === "development") {
-    api = require("../../../../env").api
-}
-
 const Payment = ({ setStep }) => {
     const stripe = useStripe()
     const [loader, setLoader] = useState(false)
@@ -36,7 +30,7 @@ const Payment = ({ setStep }) => {
     const total = subtotal + tax + shipping
 
     const getClientSecret = async (data) => {
-        const res = await Axios.post(process.env.API_URL ?? api, data)
+        const res = await Axios.post(process.env.REACT_APP_API_URL, data)
         return { clientSecret: res.data.client_secret }
     }
     const onSubmit = async (data) => {
