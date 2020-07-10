@@ -21,7 +21,7 @@ const CartDrawer = ({ isOpen, setIsOpen }) => {
         <Drawer
             isOpen={isOpen}
             size={SIZE.default}
-            autoFocus
+            autoFocus={false}
             onClose={() => setIsOpen(false)}
         >
             <HeadingMedium>Cart</HeadingMedium>

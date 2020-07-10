@@ -35,6 +35,7 @@ const CartItem = ({ item }) => {
                         <Input
                             type="number"
                             value={item.qty}
+                            autoFocus={false}
                             min={1}
                             onChange={(e) => onSubmit(e)}
                             placeholder="Quantity"
