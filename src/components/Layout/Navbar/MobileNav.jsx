@@ -5,8 +5,9 @@ import { Link } from "react-router-dom"
 import { Drawer, SIZE, ANCHOR } from "baseui/drawer"
 import { MdMenu } from "react-icons/md"
 import { FlexGrid, FlexGridItem } from "baseui/flex-grid"
+import { navData } from "."
 
-const DesktopNav = ({ navData, isNavOpen, setIsNavOpen }) => {
+const DesktopNav = ({ isNavOpen, setIsNavOpen }) => {
     const [css] = useStyletron()
     const linkStyles = css({
         textDecoration: "none",

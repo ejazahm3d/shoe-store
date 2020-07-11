@@ -15,43 +15,46 @@ import { FlexGridItem, FlexGrid } from "baseui/flex-grid"
 import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 
+export const navData = [
+    {
+        id: 1,
+        name: "Home",
+        link: "/",
+    },
+    {
+        id: 2,
+        name: "Jackets",
+        link: "/jackets",
+    },
+    {
+        id: 3,
+        name: "Shoes",
+        link: "/shoes",
+    },
+    {
+        id: 4,
+        name: "Hoodies",
+        link: "/hoodies",
+    },
+    {
+        id: 5,
+        name: "Kids",
+        link: "/kids",
+    },
+]
+
 const Navbar = ({ setIsOpen }) => {
     const [isNavOpen, setIsNavOpen] = useState(false)
     const cartState = useSelector((state) => state.cart)
     const brkPnt = useBreakpoint()
     const lessThanSmXs = brkPnt === "sm" || brkPnt === "xs"
-    const navData = [
-        {
-            id: 1,
-            name: "Home",
-            link: "/",
-        },
-        {
-            id: 2,
-            name: "Jackets",
-            link: "/jackets",
-        },
-        {
-            id: 3,
-            name: "Shoes",
-            link: "/shoes",
-        },
-        {
-            id: 4,
-            name: "Hoodies",
-            link: "/hoodies",
-        },
-        {
-            id: 5,
-            name: "Kids",
-            link: "/kids",
-        },
-    ]
 
     const [css] = useStyletron()
 
     return (
-        <HeaderNavigation className={css({ padding: "0 1rem" })}>
+        <HeaderNavigation
+            className={css({ padding: "0 1rem", maxWidth: "100%" })}
+        >
             <FlexGrid justifyContent="center" alignItems="center">
                 {lessThanSmXs && (
                     <FlexGridItem>

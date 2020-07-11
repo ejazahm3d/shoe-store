@@ -3,6 +3,7 @@ import Navbar from "./Navbar"
 import CartDrawer from "./Cart"
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import Footer from "./Footer"
 
 const PageLayout = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -25,6 +26,7 @@ const PageLayout = ({ children }) => {
                 draggable
                 pauseOnHover
             />
+            <Footer />
         </div>
     )
 }
