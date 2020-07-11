@@ -21,7 +21,7 @@ const Home = () => {
                 </Row>
                 <Row>
                     <Products
-                        productsStoreName="home"
+                        productsCategoryName="home"
                         products={homeProducts}
                     />
                 </Row>
