@@ -1,0 +1,89 @@
+[{
+        "id": "96c99f3e-0ad1-4147-8532-59e8f075ed11",
+        "name": "Nike Sportswear Club Fleece",
+        "price": "$60",
+        "category": "Men's Full-Zip Hoodie",
+        "description": "<p>The Nike Sportswear Club Fleece Hoodie combines soft fabric with simple street style that's versatile enough for everyday use. With a full zipper that goes to the chin, it's the perfect extra layer on a chilly day.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Cerulean/Cerulean/White</li><li class=\"description-preview__style-color ncss-li\">Style: BV2645-424</li></ul>",
+        "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-743c65c0-27cd-4473-ab53-ee748df58610/sportswear-club-fleece-mens-full-zip-hoodie-nR8tst.jpg"]
+    }, {
+        "id": "f9c1a44d-de9d-40aa-8f70-ef17f1a16081",
+        "name": "Nike Therma",
+        "price": "$50",
+        "category": "Men's Pullover Training Hoodie",
+        "description": "<p>The Nike Therma Hoodie features soft, thermal fabric and an adjustable hood for warm coverage.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Dark Grey Heather/Black</li><li class=\"description-preview__style-color ncss-li\">Style: 932022-063</li></ul>",
+        "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/of0zu26hdlgnhzzafaha/therma-mens-pullover-training-hoodie-tzPzH5.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/zra8pkobfhow6qh8pacq/therma-mens-pullover-training-hoodie-tzPzH5.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/mp3aq3ltjpevuracbjat/therma-mens-pullover-training-hoodie-tzPzH5.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/oehrm4ijcahto3nmmwff/therma-mens-pullover-training-hoodie-tzPzH5.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/s61no3bcqpp0t18xa6vx/therma-mens-pullover-training-hoodie-tzPzH5.jpg"]
+    }, {
+        "id": "3ca8a491-9c94-4ea8-ac49-ce3331140fff",
+        "name": "Nike Sportswear Club",
+        "price": "$45",
+        "category": "Crew",
+        "description": "<p>A closet staple, the Nike Sportswear Club Crew combines a classic embroidered logo on the left chest with the soft comfort of fleece for an elevated everyday look.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Midnight Navy/White</li><li class=\"description-preview__style-color ncss-li\">Style: BV2662-410</li></ul>",
+        "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/wedgk49vi3gbgewpgyv0/sportswear-club-crew-TWcqLw.jpg"]
+    },
+    {
+        "id": "379923e7-4921-4f35-9a71-0730851f69e5",
+        "name": "Nike Sportswear Swoosh",
+        "price": "$130",
+        "category": "Men's Woven Jacket",
+        "description": "<p>The Nike SportswearJ acket builds on the tried-and-true anorak silhouette. Contrasting color panels and big branding provide a Nike-only look that shows love for Swoosh.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Black/Anthracite/Dark Grey/Black</li><li class=\"description-preview__style-color ncss-li\">Style: CU3885-070</li></ul>",
+        "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/e425b9bb-d388-475f-a646-a44ff62f10f1/sportswear-swoosh-mens-woven-jacket-zwnqMl.jpg"]
+    }, {
+        "id": "69abfce6-ba55-4905-9596-af259c7a8e0e",
+        "name": "Nike Sportswear Windrunner+",
+        "price": "$110",
+        "category": "Men's Hooded Jacket",
+        "description": "<p>Taking inspiration from the 1978 OG, the Nike Sportswear Windrunner+ Jacket updates an icon with reflective taping and a lightweight, unlined construction.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Iron Grey/Black/White</li><li class=\"description-preview__style-color ncss-li\">Style: CZ0781-068</li></ul>",
+        "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/09ba90aa-75df-4a28-a4cc-5ce028ebb75d/sportswear-windrunner-mens-hooded-jacket-ZZJRLV.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/df9c6ba8-56b8-469e-be63-19400ac93ef2/sportswear-windrunner-mens-hooded-jacket-ZZJRLV.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/3111db5b-157b-480b-8fe9-4367060558e7/sportswear-windrunner-mens-hooded-jacket-ZZJRLV.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/e0d991a0-4ea2-4c0c-a9d6-742f2f195ed1/sportswear-windrunner-mens-hooded-jacket-ZZJRLV.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/d30d17f4-a1b0-45a8-8e03-c03d859679d3/sportswear-windrunner-mens-hooded-jacket-ZZJRLV.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/2af4b8fc-95fc-4201-9dd4-673bcd9506ac/sportswear-windrunner-mens-hooded-jacket-ZZJRLV.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/e16a89b1-fd79-4e4a-89b4-de8d94985773/sportswear-windrunner-mens-hooded-jacket-ZZJRLV.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/db26e389-8419-4897-b2eb-3d60ddc91e45/sportswear-windrunner-mens-hooded-jacket-ZZJRLV.jpg"]
+    }, {
+        "id": "69ff5e52-d240-41d2-ade0-b365ea843ee6",
+        "name": "NikeCourt",
+        "price": "$100",
+        "category": "Men's Tennis Jacket",
+        "description": "<p>Plush and pinstriped, the NikeCourt Jacket puts a posh spin on this court essential so you can warm up and cool down in style.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: White</li><li class=\"description-preview__style-color ncss-li\">Style: CQ8985-100</li></ul>",
+        "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/e948043c-c07f-43ed-ad67-7ce4586b285b/nikecourt-mens-tennis-jacket-hd9cBc.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/c343924f-10d0-44dd-9010-b9d9a2f09419/nikecourt-mens-tennis-jacket-hd9cBc.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/6145f438-db5b-45df-9616-28d7a683f4f5/nikecourt-mens-tennis-jacket-hd9cBc.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/7cb4eea7-d34b-416d-aa87-33ff9172146f/nikecourt-mens-tennis-jacket-hd9cBc.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/98dec01d-b648-49f0-b4fe-806359996231/nikecourt-mens-tennis-jacket-hd9cBc.jpg"]
+    },
+    {
+        "id": "c899e3d3-4e8f-4636-a247-966a1e6abcbf",
+        "name": "Nike Sportswear Windrunner",
+        "price": "$65",
+        "category": "Big Kids' (Boys') Jacket",
+        "description": "<p>The&nbsp;Nike Sportswear&nbsp;Windrunner&nbsp;Big Kids' (Boys') Jacket&nbsp;is made with lightweight ripstop fabric and a multi-panel hood for comfortable coverage that helps keep the elements at bay.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: White/University Red/Game Royal/White</li><li class=\"description-preview__style-color ncss-li\">Style: 850443-107</li></ul>",
+        "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/05e93ac4-649b-4738-8688-fd6bdce5d59c/sportswear-windrunner-big-kids-boys-jacket-4VTnX79v.jpg"]
+    }, {
+        "id": "e5dc353b-c9da-40df-b672-9a210bb937d5",
+        "name": "Nike Sportswear Tech Pack",
+        "price": "$85",
+        "category": "Big Kids' (Boys') Packable Jacket",
+        "description": "<p>Keep covered—rain or shine—without the bulk in the Nike Sportswear Tech Pack Jacket. The lightweight design is also water-repellent. Plus, pack the jacket into the right pocket for easy carrying on the go.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: Black</li><li class=\"description-preview__style-color ncss-li\">Style: CK1335-010</li></ul>",
+        "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-fdc731b5-27bf-4119-b211-292e8ac5ff0a/sportswear-tech-pack-big-kids-boys-packable-jacket-dZbQjt.jpg"]
+    }, {
+        "id": "bc397dfd-c8b6-4581-ba0f-f1e30208a9f6",
+        "name": "Nike Sportswear",
+        "price": "$60",
+        "category": "Toddler Full-Zip Jacket",
+        "description": "<p>The Nike Sportswear Jacket is made of lightweight windbreaker material with a breathable mesh on the sleeves to help keep little ones covered and dry while they play.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: White</li><li class=\"description-preview__style-color ncss-li\">Style: 76G398-001</li></ul>",
+        "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-6b0cb0af-3ed1-4952-8aa8-74a4faff5982/sportswear-toddler-full-zip-jacket-lFkG7H.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-567c46d3-983f-4458-838d-d419361fa5b3/sportswear-toddler-full-zip-jacket-lFkG7H.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-9d6fec4c-7571-43d8-87e7-f0d88d16bfc0/sportswear-toddler-full-zip-jacket-lFkG7H.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-bc324293-aa01-4b9e-a86a-e1d29300ff32/sportswear-toddler-full-zip-jacket-lFkG7H.jpg"]
+    },
+    {
+        "id": "0b7880d6-fe85-4321-a71b-057e15514729",
+        "name": "Nike React Miler",
+        "price": "$130",
+        "category": "Men's Running Shoe",
+        "description": "<p>The Nike React Miler gives you trusted stability for miles with athlete-informed performance. Made for dependability on your long runs, its intuitive design offers a locked-in fit and a durable feel.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: White/Photo Blue/Black</li><li class=\"description-preview__style-color ncss-li\">Style: CW1777-100</li></ul>",
+        "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-dcb8da19-e944-45c6-adcd-f07057920241/react-miler-mens-running-shoe-DgF6nr.jpg"]
+    }, {
+        "id": "c50b599d-5f15-4927-8336-6b27e0d6c305",
+        "name": "Nike React Infinity Run Flyknit",
+        "price": "$160",
+        "category": "Men's Running Shoe",
+        "description": "<p>The Nike React Infinity Run Flyknit is designed to help reduce injury and keep you on the run. More foam and improved upper details provide a secure and cushioned feel. Lace up and feel the potential as you hit the road.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: True White/White/Pure Platinum/Photo Blue</li><li class=\"description-preview__style-color ncss-li\">Style: CD4371-101</li></ul>",
+        "images": ["https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-56c262e8-c967-489b-b322-37e67304fdf0/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg", "https://static.nike.com/a/videos/t_PDP_1280_v1/f_auto,so_0/7976053b-4853-4a47-8bd0-2958aa3aae02/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-402795b9-3401-408d-9d76-680a17cd67ef/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-e92dc38f-bb2b-45a5-baec-1203bd56f8cb/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-5e364d52-40af-459e-9ee2-ba3592ca1d4c/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-41abfdf9-18dc-4140-bb9e-898aa750abf7/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-057266d3-c825-4a03-a2d0-69935e6f00f3/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-c85fe468-d5a4-441e-825a-c50fa34dae2c/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg", "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/i1-d1523514-562f-429c-bdfc-b23483d6e23f/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg"]
+    }, {
+        "id": "47d7fa0d-65a2-4711-9ff8-a0f4b8a45a88",
+        "name": "Nike Air Force 1 '07",
+        "price": "$90",
+        "category": "Men's Shoe",
+        "description": "<p>Hoops in the park, Sunday BBQs and sunshine. The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: crisp leather, stitched overlays in classic all-white and the perfect amount of flash to make you shine.</p><ul class=\"description-preview__features pt8-sm pb6-sm ncss-list-ul\"><li class=\"description-preview__color-description ncss-li\">Shown: White/White</li><li class=\"description-preview__style-color ncss-li\">Style: 315122-111</li></ul>",
+        "images": ["https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/gsuin11ptg5qgktmzoat/air-force-1-07-mens-shoe-JkTGzADv.jpg", "https://static.nike.com/a/videos/t_PDP_1280_v1/f_auto,so_4.8/fnpfrqywv44pehh8o1ug/air-force-1-07-mens-shoe-JkTGzADv.jpg", "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/s7b9hhnweke7btujcqgh/air-force-1-07-mens-shoe-JkTGzADv.jpg", "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/ler6xnp35l9udmqjkhkc/air-force-1-07-mens-shoe-JkTGzADv.jpg", "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/uzmzojffx41efevkvne0/air-force-1-07-mens-shoe-JkTGzADv.jpg", "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/z2augmvefzy62cbg7pxc/air-force-1-07-mens-shoe-JkTGzADv.jpg", "https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/xvzphfehsvxzaaff8ve0/air-force-1-07-mens-shoe-JkTGzADv.jpg"]
+    }
+]

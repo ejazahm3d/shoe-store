@@ -3,6 +3,7 @@ import shoes from "./shoes.json"
 import hoodies from "./hoodies.json"
 import jackets from "./jackets.json"
 import kidsClothes from "./kidsclothes.json"
+import home from "./home.json"
 import { toast } from "react-toastify"
 import storage from "redux-persist/lib/storage" // defaults to localStorage for web
 import { persistStore, persistReducer } from "redux-persist"
@@ -17,7 +18,7 @@ const initialProductsState = {
     home: {
         name: "Men's Shoes",
         route: "/home",
-        products: mapProducts(shoes),
+        products: mapProducts(home),
     },
     hoodies: {
         name: "Men's Hoodies and Sweaters",
