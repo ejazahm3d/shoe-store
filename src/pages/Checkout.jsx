@@ -45,7 +45,10 @@ const Checkout = () => {
                         </CheckoutLayout>
                     </div>
                     <div>
-                        <CheckoutLayout title="2. Payment" showContent={true}>
+                        <CheckoutLayout
+                            title="2. Payment"
+                            showContent={step === 2}
+                        >
                             <Elements stripe={stripePromise}>
                                 <Payment setStep={setStep} />
                             </Elements>
