@@ -5,19 +5,25 @@ import { Client as Styletron } from "styletron-engine-atomic"
 import { Provider as StyletronProvider } from "styletron-react"
 import { LightTheme, BaseProvider } from "baseui"
 import { Provider as ReduxProvider } from "react-redux"
-import { store } from "./store"
+import { PersistGate } from "redux-persist/integration/react"
+
+import persistStore from "./store"
+
+const { store, persistor } = persistStore()
 const engine = new Styletron()
 
 function App() {
     return (
         <ReduxProvider store={store}>
-            <StyletronProvider value={engine}>
-                <BaseProvider theme={LightTheme}>
-                    <Layout>
-                        <Router />
-                    </Layout>
-                </BaseProvider>
-            </StyletronProvider>
+            <PersistGate loading={null} persistor={persistor}>
+                <StyletronProvider value={engine}>
+                    <BaseProvider theme={LightTheme}>
+                        <Layout>
+                            <Router />
+                        </Layout>
+                    </BaseProvider>
+                </StyletronProvider>
+            </PersistGate>
         </ReduxProvider>
     )
 }

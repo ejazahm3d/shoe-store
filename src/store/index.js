@@ -4,6 +4,8 @@ import hoodies from "./hoodies.json"
 import jackets from "./jackets.json"
 import kidsClothes from "./kidsclothes.json"
 import { toast } from "react-toastify"
+import storage from "redux-persist/lib/storage" // defaults to localStorage for web
+import { persistStore, persistReducer } from "redux-persist"
 
 const mapProducts = (products) => {
     const mappedProducts = {}
@@ -131,11 +133,21 @@ const productsSlice = createSlice({
     initialState: initialProductsState,
 })
 
-export const store = configureStore({
-    reducer: combineReducers({
-        products: productsSlice.reducer,
-        cart: cartSlice.reducer,
-        shipping: shippingSlice.reducer,
-        payment: paymentSlice.reducer,
-    }),
+const persistConfig = {
+    key: "root",
+    storage,
+}
+
+const rootReducer = combineReducers({
+    products: productsSlice.reducer,
+    cart: cartSlice.reducer,
+    shipping: shippingSlice.reducer,
+    payment: paymentSlice.reducer,
 })
+const persistedReducer = persistReducer(persistConfig, rootReducer)
+
+export default () => {
+    let store = configureStore({ reducer: persistedReducer })
+    let persistor = persistStore(store)
+    return { store, persistor }
+}
